@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  padding: 10px;
+}
+
+.categories {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.categories--item {
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #dedede;
+  font-weight: bold;
+}
+
+.categories--item-selected {
+  background-color: #787878;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  list-style-type: none;
+}
+
+.products--item {
+  flex: 1 1 30%; /* Изначальная ширина элемента */
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  height: 100%;
+}
+
+.product--image {
+  width: 300px;
+  height: auto;
+}
+
+.product--title {
+  margin-top: auto;
+  text-align: center;
+}
+
+a {
+  color: green;
+}
+
+a:active {
+  color: red;
+}
